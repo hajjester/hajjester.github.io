@@ -1,0 +1,14 @@
+<h1 class=" hb-posts gradient1" style="border:solid 0.01px rgba(135, 207, 235, 0.434); border-radius: 50px; justify-content:center; display:flex; text-shadow: 0.2px 0.2px 22px rgb(20, 20, 20); box-shadow: 0px 2px 10px 0.0001px black;">Agendamentos da Blazing Barbers: </h1>
+<link rel="stylesheet" href="css/styles.css">
+<table>
+    <tbody>
+        {{!-- {{posts}} --}}
+        <div class=" hb-posts" style=" box-shadow: 0.1px 0 0.2em black;">
+            {{#each posts}} <hr style="height:0.1px;border-width:0;color:gray;background-color:gray"> 
+           <div style="display:flex; align-items:center; align-content:center; justify-content:center; text-shadow: 0.2px 0.0px 6px rgb(20, 20, 20);"> {{nome}}</div>
+             <div style="display:flex; align-items:center; align-content:center; justify-content:center; text-shadow: 0.2px 0.0px 6px rgb(20, 20, 20);">{{horario}}</div>
+             <p>
+            <a href="/deletar/{{id}}" class="footer__logo" style=" text-decoration:none; display:flex; align-items:center; align-content:center; justify-content:center;"> <button class="gradient1 hb-posts" style="box-shadow: 0px 4px 9px 0.1px black; border:solid 0.01px rgba(135, 207, 235, 0.434); text-shadow: 0.2px 0.0px 6px rgb(20, 20, 20);">Deletar este agendamento</button></a><hr style="height:0.2px;border-width:0;color:gray;background-color:gray"> 
+            {{/each}} </div>  
+    </tbody>
+</table>
